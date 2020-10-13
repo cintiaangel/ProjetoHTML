@@ -4,43 +4,62 @@
         <title> hashtagfinder </title>
         <meta charset="UTF-8">
         <base target="_parent">
+        <link rel="stylesheet" type="text/css" href="hashtagfinder.css" media="screen">
     </head>
     <body>
         
-    <div> 
+    <div class="container_results"> 
         Exibindo os 10 resultados mais recentes para #natureza
     </div> 
 
     <div id="images">
-        <a>
-            <img src="images/icon-arrow-left.png">
-        </a>
-
-        <img src="">
-        <span> Postado por @twitterusername </span>
-        <img src="">
-        <span> Postado por @twitterusername </span>
-        <img src="">
-        <span> Postado por @twitterusername </span>
-        <img src="">
-        <span> Postado por @twitterusername </span>
-        <img src="">
-        <span> Postado por @twitterusername </span>
-
-        <a>
-            <img src="images/icon-arrow-right1.png">
-        </a> 
-
+        <div class="container_images">
+            <div class="arrow_right">
+                <a>
+                    <img class="left_right" src="images/icon-arrow-left.png">
+                </a>
+            </div>
+            <div class="container_photo">
+                <img  class="photo" src="images/a4e1687f-a655-4a53-8e53-df6e5e87ed71.jpeg">
+                <p> Postado por</p> 
+                <h2>@twitterusername</h2>
+            </div>
+            <div class="container_photo">
+                <img class="photo" src="images/lua.JPG">
+                <p> Postado por</p> 
+                <h2>@twitterusername</h2>
+            </div>
+            <div class="container_photo">
+                <img class="photo" src="images/vitoria.jpeg">
+                <p> Postado por</p> 
+                <h2>@twitterusername</h2>
+            </div>
+            <div class="container_photo">
+                <img class="photo" src="images/luacheia.JPG">
+                <p> Postado por</p> 
+                <h2>@twitterusername</h2>
+            </div>
+            <div class="container_photo">
+                <img class="photo" src="images/frajola.jpeg">
+                <p> Postado por</p> 
+                <h2>@twitterusername</h2>
+            </div>
+            <div class="arrow_left">
+                <a>
+                    <img class="left_right" src="images/icon-arrow-right1.png">
+                </a> 
+            </div>
+        </div>
     </div>
 
     <div id="click"> 
-        <nav>
-        <ul>
-        <li> <a> </a> </li>
-        <li> <a> </a> </li>
-        <li> <a> </a> </li>
+        
+        <ul class="ul_click">
+        <li> <button class="button_click"></button> </li>
+        <li> <button class="button_click"></button> </li>
+        <li><button class="button_click"></button> </li>
         </ul>
-        </nav>
+        
     </div>
     </body>
 
