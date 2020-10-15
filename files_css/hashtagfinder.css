@@ -127,6 +127,7 @@ li {
     font-size: 21px;
     height: 120px;
     padding-top: 10px;
+    text-align: center;
    }
 
    .ul_click {
@@ -143,6 +144,8 @@ li {
   
    #images {
        display: grid;
+       display: grid;
+       overflow-x: scroll;
    
     }
 

@@ -3,60 +3,123 @@
     flex-wrap: wrap;
 }
 
+.dad_posts {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
 .posts {
     background-color: white;
-    box-shadow: 0px 2px 7px 0px rgba(184,175,184,1);
-    width: 50%;
-    height: 160px;
+    box-shadow: 0px 1px 3px 0px rgb(212 209 209);
+    height: 169px;
     position: relative;
     margin-bottom: 38px;
     display: flex;
     border-radius: 10px;
+    width: 514px;
 }
 
 .text_posts {
-    padding-top: 13px;
-    padding-left: 71px;
+    flex: 1;
+    font-family: arial;
+    margin-top: 26px
+}
 
+.text {
+    display: flex;
+    align-items: center;  
 }
 
 .image_peoples {
-    position: absolute;
     background-color: black;
     width: 53px;
     height: 53px;
     border-radius: 100%;
     margin-top: 26px;
+    margin: 24px 19px 0px 30px;
 }
 
-
 h2 {
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
     display: flex;
-    position: absolute;
-    padding-top: 12px;
-
+    padding-right: 12px;
 }
 
 span {
-    font-size: 14px;
+    font-size: 13px;
     display: flex;
-    padding-left: 95px;
-    padding-top: 17px;
-    color: rgb(0 0 0 / 52%)
+    color: rgb(0 0 0 / 52%);
 }
 
 p {
-    font-size: 14px;
+    font-size: 13px;
     margin: 8px 0px;
+    margin: 5px 77px 25px 0px;
 }
 
 a {
-    font-size: 15px;
+    font-size: 13px;
     text-decoration: none;
     color: rgb(102 104 249);
     margin-top: 11px;
-    position: absolute;
     font-weight: bold;
+}
+
+@media (max-width:700px) {
+    .dad_posts {
+        display: block;
+    }
+
+    .dad_results {
+        display: block;
+    }
+}
+
+@media (max-width:450px) {
+        .dad_posts {
+           display: block;
+        }
+        
+        .dad_results {
+            width: none;
+            display: block;
+        }
+
+        .posts {
+            height: 124px;
+            margin-bottom: 22px;
+            border-radius: 4px;
+            width: 300px;
+        }
+
+        .image_peoples {
+            margin-top: 26px;
+            margin: 13px 17px 0px 14px;
+        }
+
+        .text_posts {
+            margin-top: 7px;
+        }
+
+        h2 {
+            padding-right: 12px;
+            font-size: 14px;
+        }
+
+        span {
+            font-size: 12px;
+        }
+
+        p {
+            font-size: 11px;
+            margin: 5px 0px 14px 0px;
+            letter-spacing: 1px;
+        }
+
+        a {
+            font-size: 11px;
+        }
 }
