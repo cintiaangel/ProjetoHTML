@@ -33,7 +33,6 @@
 }
 
 .image_peoples {
-    background-color: black;
     width: 53px;
     height: 53px;
     border-radius: 100%;
@@ -66,6 +65,13 @@ a {
     color: rgb(102 104 249);
     margin-top: 11px;
     font-weight: bold;
+}
+
+.image {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 100%;
 }
 
 @media (max-width:700px) {
