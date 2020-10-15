@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+
+.index_iframe1 {
+    border: 0;
+    width: 100%;
+    height: 477px;
+}
+
+.index_iframe2 {
+    border: 0;
+    width: 100%;
+    height: 511px;
+
+}
+
+.index_iframe3 {
+    border: 0;
+    width: 100%;
+    height: 1051px;
+}
+
+.footer_iframe {
+    border: 0;
+    width: 100%;
+    height: 127px;
+}
+
+.container_footer {
+    margin-top: 50px;
+    display: flex;
+}
