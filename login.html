@@ -3,35 +3,38 @@
     <head>
         <meta charset="UTF-8">
         <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
         <base target="_parent">
     </head>
 
     <body background="images/background.png">
-        <div id="logon">
+        <div class="logon">
             <img src="images/logo-white1.png">
         </div>
 
          <nav>
-            <ul>
-                 <li><img src="images/icon-home.png"><a href="index.html">home</a> </li>
+            <ul> 
+                <div class="home"> <img src="images/icon-home.png"><a href="index.html">home</a> </li>
              </ul>
-                
+                </div>
+                </nav>
+                 
          </nav>
     
-        <div id="login">
+        <div class="login">
+            <br> <br> <br> <br> <br>
             <h1>Login</h1>
             <form>
-                <div>
-                    <label>Usuário</label>
-                    <input type="text" name="Usuário">  
+                <div>          
+                    <input type="text" name="Usuário" placeholder="Usúario">
                 </div>
-                <div>
-                    <label>Senha</label>
-                     <input type="password" name="Senha">
+                <div>                   
+                     <input type="password" name="Senha" placeholder="Senha">
                 </div> 
             </form> 
-
+            <div class="button">
              <input type="submit" name=ACESSAR value="Acessar">
         </div>    
+        </div>
     </body>
 </html>
