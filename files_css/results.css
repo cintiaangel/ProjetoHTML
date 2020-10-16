@@ -1,7 +1,10 @@
+/*container que engloba todas divs */
+
 .dad_results {
     display: flex;
     flex-wrap: wrap;
 }
+/* css dos cards */
 
 .dad_posts {
     width: 50%;
@@ -74,6 +77,9 @@ a {
     border-radius: 100%;
 }
 
+/* media query será aplicado quando a
+ tela ou browser tiver exatos 700 pixels de largura */
+
 @media (max-width:700px) {
     .dad_posts {
         display: block;
@@ -84,48 +90,51 @@ a {
     }
 }
 
+/* media query será aplicado quando a
+ tela ou browser tiver exatos 450 pixels de largura */
+
 @media (max-width:450px) {
-        .dad_posts {
-           display: block;
-        }
+    .dad_posts {
+        display: block;
+    }
         
-        .dad_results {
-            width: none;
-            display: block;
-        }
+    .dad_results {
+        width: none;
+        display: block;
+    }
 
-        .posts {
-            height: 124px;
-            margin-bottom: 22px;
-            border-radius: 4px;
-            width: 300px;
-        }
+    .posts {
+        height: 124px;
+        margin-bottom: 22px;
+        border-radius: 4px;
+        width: 300px;
+    }
 
-        .image_peoples {
-            margin-top: 26px;
-            margin: 13px 17px 0px 14px;
-        }
+    .image_peoples {
+        margin-top: 26px;
+        margin: 13px 17px 0px 14px;
+    }
 
-        .text_posts {
-            margin-top: 7px;
-        }
+    .text_posts {
+        margin-top: 7px;
+    }
 
-        h2 {
-            padding-right: 12px;
-            font-size: 14px;
-        }
+    h2 {
+        padding-right: 12px;
+        font-size: 14px;
+    }
 
-        span {
-            font-size: 12px;
-        }
+    span {
+        font-size: 12px;
+    }
 
-        p {
-            font-size: 11px;
-            margin: 5px 0px 14px 0px;
-            letter-spacing: 1px;
-        }
+    p {
+        font-size: 11px;
+        margin: 5px 0px 6px 0px;
+        letter-spacing: 1px;
+    }
 
-        a {
-            font-size: 11px;
-        }
+    a {
+        font-size: 11px;
+    }
 }

@@ -2,6 +2,8 @@ body {
     margin: 0;
 }
 
+/* iframes*/
+
 .index_iframe1 {
     border: 0;
     width: 100%;
@@ -30,4 +32,13 @@ body {
 .container_footer {
     margin-top: 50px;
     display: flex;
+}
+
+/* media query será aplicado quando a
+ tela ou browser tiver exatos 450 pixels de largura */
+
+@media (max-width:450px){
+    .index_iframe2 {
+        height: 377px;
+    }
 }

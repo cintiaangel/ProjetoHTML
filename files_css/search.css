@@ -7,6 +7,8 @@ body {
  margin: 0px;
 }
 
+/* background*/
+
 .hero {
     background-image: url(../images/hero-bg.jpg);
     height: 439px;
@@ -34,6 +36,8 @@ p {
     font-family: "adobe-clean", sans-serif;
     font-size: 14px;
 }
+
+/* campo de busca*/
 
 input {
     border: none;
@@ -73,7 +77,8 @@ input:focus {
     margin-left: 20px;
 }
 
-
+/* media query será aplicado quando a
+ tela ou browser tiver exatos 450 pixels de largura */
 
 @media (max-width:450px){
     input {
