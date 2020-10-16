@@ -18,17 +18,18 @@ body{
 }
 /*ajuste do background*/
 .bg{
+    background-image:url(../images/about-bg.jpg);
     width: 100%;
-    height: 30%;
+    height: 35%;
     border: none;
     margin: 0;
     padding: 0;
 }
-.top{
+/*.top{
     position: absolute;
     width: 100%;
     height: 30%;
-}
+}*/
 .h1{
     color: #ffffff;
     font-size: 52px;
@@ -43,6 +44,7 @@ h1{
     position: relative;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 52px;
+    margin: 0;
 }
 h2{
     margin-top: 10%;
@@ -88,6 +90,7 @@ h4{
     margin-left: 20%;
     margin-top: 5%;
     position: relative;
+    object-fit: cover;
 }
 #cintia, #carlos, #juliana{
     margin: 5%;
