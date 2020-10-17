@@ -4,37 +4,31 @@
         <meta charset="UTF-8">
         <title>Login</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
         <base target="_parent">
     </head>
 
     <body background="images/background.png">
-        <div class="logon">
-            <img src="images/logo-white1.png">
-        </div>
-
-         <nav>
-            <ul> 
-                <div class="home"> <img src="images/icon-home.png"><a href="index.html">home</a> </li>
-             </ul>
-                </div>
-                </nav>
-                 
-         </nav>
-    
+        <iframe class="iframe" src="headers/button_home.html"> </iframe>
         <div class="login">
-            <br> <br> <br> <br> <br>
+            
+            <div class="h1_login">  
             <h1>Login</h1>
+            </div>
+            
             <form>
-                <div>          
-                    <input type="text" name="Usuário" placeholder="Usúario">
+                <div id="login">  
+
+                    <input class="user" type="text" name="Usuário" placeholder="Usúario">
                 </div>
                 <div>                   
-                     <input type="password" name="Senha" placeholder="Senha">
+                     <input class="password_input" type="password" name="Senha" placeholder="Senha">
                 </div> 
             </form> 
             <div class="button">
-             <input type="submit" name=ACESSAR value="Acessar">
-        </div>    
+                    <button> ACESSAR </button>
+            </div>    
         </div>
     </body>
 </html>
