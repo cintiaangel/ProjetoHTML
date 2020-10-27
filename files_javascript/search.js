@@ -11,7 +11,7 @@ function validate(e) {
         campo.innerHTML = 'Ops, campo vazio! Digite o assunto de interrese no campo de busca.'
         campo.style.display = 'block';
 	}else if(input.value.length > 140){
-        campo.innerHTML = 'Ops hastagh muito extensa'
+        campo.innerHTML = 'Ops hashtag muito extensa digite uma frase com no minimo 140 caracteres'
         campo.style.display = 'block'
     }else {
         campo.style.display = 'none';
