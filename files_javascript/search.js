@@ -2,10 +2,24 @@
 function validate(e) {
     e.preventDefault()
     var input = e.target[0];
-    if(input.value == ""){
-        alert('prencha')
+    var campo = document.querySelector('.error_message');
+    var regex = /[^#]+/g;
+    console.log(input)
+    console.log(regex.test(input));
+
+    if(input.value == ''){
+        campo.innerHTML = 'Ops, campo vazio! Digite o assunto de interrese no campo de busca.'
+        campo.style.display = 'block';
+	}else if(input.value.length > 140){
+        campo.innerHTML = 'Ops hastagh muito extensa'
+        campo.style.display = 'block'
+    }else {
+        campo.style.display = 'none';
     }
-    console.log(e)
+
+    if (input.value.match(regex)[0]) {
+        console.log(input.value.match(regex)[0])
+    }
 }
 
 
