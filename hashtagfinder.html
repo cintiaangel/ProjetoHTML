@@ -6,109 +6,45 @@
         <base target="_parent">
         <link rel="stylesheet" type="text/css" href="files_css/hashtagfinder.css" media="screen">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
     </head>
     <body>
         
-    <div class="container_results"> 
-        Exibindo os 10 resultados mais recentes para #natureza
-    </div> 
+        <div class="modal">
+            <div class="modal_content">
+                <img src="images/frajola.jpeg" id="modal_img">
+            </div>
+            <span id="bt_close">&times;</span>
+        </div>
 
-    <!--Os spans abaixo são mensagens de erro caso a pesquisa no campo de buscas
-        não seja o esperado
-    -->
-
-    <!--    
-        <span class= "error_message">
-            Ops, campo vazio! Digite uma hashtag + o assunto de interrese
-            no campo de busca.
-        </span> 
-    -->
-
-    <!--    
-        <span class= "error_message">
-            Ops, hashtag muito extensa, 
-            digite uma frase com menos caracteres
-        </span>
-    -->
-
-    <!--Cards que exibem as 10 imagens relacionado a busca do usuario-->
-
-    <div id="images">
-        <div class="container_images">
-            <div class="arrow_right">
+        <div class="container_results"> 
+            Exibindo os 10 resultados mais recentes para #natureza
+        </div>
+        <div class="teste">
+            <div onclick="carregarImagens(--page)" class="arrow_right">
                 <a>
                     <img class="left_right" src="images/icon-arrow-left.png">
                 </a>
+            </div> 
+
+            <div class="container_images"> 
+            <div class="imagem exp1" style="display: none;"></div>
             </div>
-            <div class="container_photo">
-                <img  class="photo" src="images/a4e1687f-a655-4a53-8e53-df6e5e87ed71.jpeg">
-                <p> Postado por</p> 
-                <h2>@twitterusername</h2>
-            </div>
-            <div class="container_photo">
-                <img class="photo" src="images/lua.JPG">
-                <p> Postado por</p> 
-                <h2>@twitterusername</h2>
-            </div>
-            <div class="container_photo">
-                <img class="photo" src="images/vitoria.jpeg">
-                <p> Postado por</p> 
-                <h2>@twitterusername</h2>
-            </div>
-            <div class="container_photo">
-                <img class="photo" src="images/flower1.jpeg">
-                <p> Postado por</p> 
-                <h2>@twitterusername</h2>
-            </div>
-            <div class="container_photo">
-                <img class="photo" src="images/frajola.jpeg">
-                <p> Postado por</p> 
-                <h2>@twitterusername</h2>
-            </div>
-            <div class="container_photo">
-                <img class="photo" src="images/pineapple.jpeg">
-                <p> Postado por</p> 
-                <h2>@twitterusername</h2>
-            </div>
-            <div class="container_photo">
-                <img class="photo" src="images/fofao.JPG">
-                <p> Postado por</p> 
-                <h2>@twitterusername</h2>
-            </div>
-            <div class="container_photo">
-                <img class="photo" src="images/luacheia.JPG">
-                <p> Postado por</p> 
-                <h2>@twitterusername</h2>
-            </div>
-            <div class="container_photo">
-                <img class="photo" src="images/darwin.jpeg">
-                <p> Postado por</p> 
-                <h2>@twitterusername</h2>
-            </div>
-            <div class="container_photo">
-                <img class="photo" src="images/flower.jpeg">
-                <p> Postado por</p> 
-                <h2>@twitterusername</h2>
-            </div>
-            <div class="arrow_left">
+            <div onclick="carregarImagens(++page)" class="arrow_left">
                 <a>
                     <img class="left_right" src="images/icon-arrow-right1.png">
                 </a> 
-            </div>
+            </div>  
         </div>
-    </div>
-
-    <!--Botões que aparecem somente na versão desktop-->
-
-    <div id="click"> 
-        
-        <ul class="ul_click">
-        <li> <button class="button_click"></button> </li>
-        <li> <button class="button_click"></button> </li>
-        <li><button class="button_click"></button> </li>
-        </ul>
-        
-    </div>
+        <div id="click">
+            <ul class="ul_click">
+                <li><button onclick="carregarImagens(1)" class="button_click"></button></li>
+                <li><button onclick="carregarImagens(2)" class="button_click"></button></li>
+                <li><button onclick="carregarImagens(3)" class="button_click"></button></li>
+            </ul>
+        </div>
+            
+            <script src="files_javascript/hashtagfinder.js"></script>
     </body>
 
 </html>
