@@ -16,21 +16,22 @@
             </div>
             <span id="bt_close">&times;</span>
         </div>
-
         <div class="container_results"> 
             Exibindo os 10 resultados mais recentes para #natureza
         </div>
-        <div class="teste">
-            <div onclick="carregarImagens(--page)" class="arrow_right">
+        <div class="dead">
+            <div onclick="uploadImages(--page)" class="arrow_right">
                 <a>
                     <img class="left_right" src="images/icon-arrow-left.png">
                 </a>
             </div> 
-
+            
             <div class="container_images"> 
-            <div class="imagem exp1" style="display: none;"></div>
+
+                    <span class="text_twitter">Postado por:</span>
+            <div class="photo exp1" style="display: none;"></div>
             </div>
-            <div onclick="carregarImagens(++page)" class="arrow_left">
+            <div onclick="uploadImages(++page)" class="arrow_left">
                 <a>
                     <img class="left_right" src="images/icon-arrow-right1.png">
                 </a> 
@@ -38,9 +39,9 @@
         </div>
         <div id="click">
             <ul class="ul_click">
-                <li><button onclick="carregarImagens(1)" class="button_click"></button></li>
-                <li><button onclick="carregarImagens(2)" class="button_click"></button></li>
-                <li><button onclick="carregarImagens(3)" class="button_click"></button></li>
+                <li><button id="button1" onclick="uploadImages(1)" class="button_click"></button></li>
+                <li><button id="button2" onclick="uploadImages(2)" class="button_click"></button></li>
+                <li><button id="button3" onclick="uploadImages(3)" class="button_click"></button></li>
             </ul>
         </div>
             
