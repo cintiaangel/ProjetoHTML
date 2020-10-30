@@ -5,11 +5,28 @@
         <title>Login</title>
         <link rel="stylesheet" type="text/css" href="files_css/login.css" media="screen">
         <meta name="viewport" content="width=device-width, initiscale=1.0">
+        <script type="text/javascript"> 
+            
+            function validar() {
 
+            var user = cadastro.usuario.value;
+            var password = cadastro.senha.value;
+        
+        if(user=="") {alert("É preciso preencher este campo"); cadastro.usuario.focus();return false;}
+        
+        if(password=="") {alert("É preciso preencher este campo"); cadastro.senha.focus();return false;}
+        
+        if (user!="academy@cocreare.com.br"){alert("Login inválido");cadastro.usuario.focus();return false;}
+        if (password!="123456") {alert("Senha inválida");cadastro.senha.focus();return false;} 
+        
+    
+        
+        }
+        
+         </script>
     </head>
         <base target="_parent">
     </head>
-
     <body background="images/background.png">
         <iframe class="iframe" src="headers/button_home.html"> </iframe>
         <div class="login">
@@ -18,17 +35,17 @@
             <h1>Login</h1>
             </div>
             
-            <form>
+            <form name="cadastro" method="post" action="search.html">
                 <div id="login">  
-
-                    <input class="user" type="text" name="Usuário" placeholder="Usúario">
+        
+                    <input class="user" type="text" name="usuario" placeholder="Usuário" required>
                 </div>
                 <div>                   
-                     <input class="password_input" type="password" name="Senha" placeholder="Senha">
+                     <input class="password_input" type="password" name="senha" placeholder="Senha" required>
                 </div> 
-            </form> 
-            <div class="button">
-                <button> ACESSAR </button>
+            
+            <input type="submit" class="Enviar" onclick="return validar()" value="Acessar">
+
             </div>    
         </div>
     </body>
