@@ -77,6 +77,12 @@ input:focus {
     margin-left: 20px;
 }
 
+.msg_error {
+    color: red;
+    position: absolute;
+
+}
+
 /* media query será aplicado quando a
  tela ou browser tiver exatos 450 pixels de largura */
 

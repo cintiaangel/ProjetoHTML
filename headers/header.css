@@ -51,6 +51,25 @@ ul {
     letter-spacing: 1px;
 }
 
+.menu_login2 {
+    padding: 8px 20px;
+    border-width: 1px;
+    border-color: #3633f7;
+    border-radius: 50px;
+    background-color: #3633f7;
+    text-decoration: none;
+    position: relative;
+    margin-right: 17px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    font-size: 8px;
+    font-family: "adobe-clean", sans-serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+    }
+
+
 
 .button_cilcle {
     width: 7px;
@@ -69,7 +88,13 @@ header {
     justify-content: space-between;
 }
 
-
+.header_trasparent {
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
 
 @media (max-width: 408px) {
     .logo {
@@ -90,5 +115,10 @@ header {
     .menu_login {
         padding: 7px 16px;
         margin-right: 2px;
+    }
+
+    .menu_login2 {
+        padding: 7px 16px;
+        margin-right: 21px;
     }
 }
