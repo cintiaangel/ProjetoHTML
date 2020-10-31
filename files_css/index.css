@@ -30,6 +30,10 @@ body {
 
 }
 
+.index_iframe2:hover {
+    z-index: 0;
+}
+
 .index_iframe3 {
     border: 0;
     width: 100%;

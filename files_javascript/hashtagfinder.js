@@ -11,31 +11,41 @@
         "https://www.rbsdirect.com.br/imagesrc/25265801.jpg?w=700",
     ]
     var username = [
-        "@twitterusername",
-        "@twitterusername",
-        "@twitterusername",
-        "@twitterusername",
-        "@twitterusername",
-        "@twitterusername",
-        "@twitterusername",
-        "@twitterusername",
-        "@twitterusername",
-        "@twitterusername",
+        "@twitterusername1",
+        "@twitterusername2",
+        "@twitterusername3",
+        "@twitterusername4",
+        "@twitterusername5",
+        "@twitterusername6",
+        "@twitterusername7",
+        "@twitterusername8",
+        "@twitterusername9",
+        "@twitterusername10",
     ]
     var page =0;
 
     function uploadImages(pageParam) {
-
-        document.querySelector('#button1').style['background-color'] = 'initial';
-        document.querySelector('#button2').style['background-color'] = 'initial';
-        document.querySelector('#button3').style['background-color'] = 'initial';
                 
-        if (pageParam <= 1) {
+        if (pageParam === 1) {
+            document.querySelector('#button2').style['background-color'] = 'gray';
+            document.querySelector('#button3').style['background-color'] = 'gray';
             document.querySelector('#button1').style['background-color'] = '#5469f9';
             page=1
             pageParam = 1
+        } else if (pageParam === 2) {
+            page=2
+            pageParam = 2
+            document.querySelector('#button2').style['background-color'] = '#5469f9';
+            document.querySelector('#button1').style['background-color'] = 'gray';
+            document.querySelector('#button3').style['background-color'] = 'gray';
+        } else if (pageParam === 3) {
+            page=3  
+            pageParam = 3
+            document.querySelector('#button3').style['background-color'] = '#5469f9';
+            document.querySelector('#button2').style['background-color'] = 'gray';
+            document.querySelector('#button1').style['background-color'] = 'gray';
         }
-       
+
         page = pageParam;
         pageEnd = pageParam*5
         var html = ""
@@ -56,7 +66,7 @@
     }
 
     function carregarModal(){
-
+ 
         let imagens_modal = document.querySelectorAll('.photo');
         let modal = document.querySelector('.modal');
 
@@ -65,16 +75,12 @@
         let textUser = document.querySelector('.text_twitter');
 
         for(let i =0; i<imagens_modal.length;i++){
-
             imagens_modal[i].addEventListener('click',function(){
-            modalImg.src = imagens[(page - 1)*5+i];
-            modal.classList.toggle('modal_active');
-        //  textUser.classList.toggle('text_active')
-            imagens.src = username[(page - 1)*5+i];
-        //  console.log(textUser)
-
-        });
-    }
+                modalImg.src = imagens[(page - 1)*5+i];
+                modal.classList.toggle('modal_active');
+                textUser.innerHTML = username[(page - 1)*5+i]
+            });
+        }
         btClose.addEventListener('click', function(e){
         modal.classList.remove('modal_active');
      // textUser.classList.add('text_active')

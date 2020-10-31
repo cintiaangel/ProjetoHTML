@@ -51,6 +51,7 @@ body {
     font-family: arial;
     font-weight: 900;
     padding-top: 83px;
+    text-align: center;
 }
 
 .button_click {
@@ -87,7 +88,7 @@ body {
     
 }
 
-.imagem:hover{
+.photo:hover{
     filter: grayscale(100%);
     transform: scale(1.1);
 }
@@ -125,18 +126,19 @@ li{
     
 }
 
-.modal_content{
+.modal_content {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    position: relative;
 }
 
 #modal_img{
     width: 65vw;
+    height: 100%;
     transform: scale(0);
     transition: all linear .3s;
-    
+    object-fit: cover;
 }
 
 #bt_close{
@@ -158,7 +160,12 @@ li{
 .modal_active{
     visibility: visible;
     opacity: 1;
-
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
 }
 
 .text_active{
@@ -172,15 +179,38 @@ li{
 
 .text_twitter {
     margin: 0;
-    font-size: 24px;
+    font-size: 27px;
     color: white;
-    
+    font-weight: bold;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+.text_edition{
+    display: grid;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.span_text{
+    font-size: 25px;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 /* media query será aplicado quando a
  tela ou browser tiver exatos 450 pixels de largura */
 
  @media (max-width:450px){
+
+.dead {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    margin-top: 0px;
+    overflow: scroll;
+    justify-content: normal;
+    }
+
    
     .container_results {
      font-size: 21px;
@@ -196,38 +226,57 @@ li{
     #click {
         display: none;
     }
- 
+    
+   
     .arrow_left {
-        display: none;
+        width: 31px;
+        height: 31px;
+        margin-left: -37px;
     }
  
     .arrow_right {
-        display: none;
+        width: 31px;
+        height: 31px;
+        margin-right: -36px;
+    }
+
+    .left_right {
+        width: 17px;
+        margin: 8px;
     }
    
-    #images {
-        display: grid;
-        overflow-x: scroll;
-        height: 234px;
-    
-     }
- 
-     .container_photo {
-         width: 128px;
-         height: 191px;
-         margin: 0 7px;
-     }
+   .photo{
+
+        width: 121px;
+        object-fit: cover;
+        height: 100%;
+        border-radius: 15px;
+        box-shadow: 0px 2px 7px 0px rgba(184,175,184,1);
+        margin: 5px;
+    }
  
      .container_images {
-         margin-top: -16px;
+        margin-top: -16px;
+        display: inline-flex;
+        width: auto;
+        height: 180px;
      }
- 
-     .p {
-         font-size: 13px;
+
+     .span_text {
+        font-size: 16px;
      }
- 
-     h2 {
-         font-size: 13px;
+
+     .text_twitter {
+        font-size: 17px;
      }
+
+     #modal_img {
+        width: 95vw;
+     }
+
+     .text_edition {
+        bottom: 13px;
+        left: 13px;
+     }
+}
  
- }
