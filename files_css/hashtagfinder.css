@@ -2,8 +2,7 @@ body {
     margin: 0;
 }
 
-
-.dead {
+.dad {
     display: flex;
     width: 100%;
     height: 250px;
@@ -122,8 +121,7 @@ li{
     visibility: hidden;
     z-index: 1;
     opacity: 0;
-    transition: visibility 0.8s linear, opacity 0.5s linear;
-    
+    transition: visibility 0.8s linear, opacity 0.5s linear;   
 }
 
 .modal_content {
@@ -153,11 +151,12 @@ li{
     transition: all ease-out .4s;
     cursor: pointer;
 }
-#bt_close:hover{
+
+#bt_close:hover {
     background-color: #f00;
 }
 
-.modal_active{
+.modal_active {
     visibility: visible;
     opacity: 1;
     display: flex;
@@ -168,12 +167,11 @@ li{
     align-items: center;
 }
 
-.text_active{
+.text_active {
     opacity: 100%;
 }
 
-
-.modal_active #modal_img{
+.modal_active #modal_img {
     transform: scale(1);
 }
 
@@ -184,6 +182,7 @@ li{
     font-weight: bold;
     text-shadow: black 0.1em 0.1em 0.2em;
 }
+
 .text_edition{
     display: grid;
     position: absolute;
@@ -191,7 +190,7 @@ li{
     left: 20px;
 }
 
-.span_text{
+.span_text {
     font-size: 25px;
     color: white;
     text-shadow: black 0.1em 0.1em 0.2em;
@@ -200,15 +199,15 @@ li{
 /* media query será aplicado quando a
  tela ou browser tiver exatos 450 pixels de largura */
 
- @media (max-width:450px){
+ @media (max-width:450px) {
 
-.dead {
-    display: flex;
-    width: 100%;
-    height: 250px;
-    margin-top: 0px;
-    overflow: scroll;
-    justify-content: normal;
+    .dad {
+        display: flex;
+        width: 100%;
+        height: 250px;
+        margin-top: 0px;
+        overflow: scroll;
+        justify-content: normal;
     }
 
    
@@ -227,7 +226,6 @@ li{
         display: none;
     }
     
-   
     .arrow_left {
         width: 31px;
         height: 31px;
@@ -246,7 +244,6 @@ li{
     }
    
    .photo{
-
         width: 121px;
         object-fit: cover;
         height: 100%;
@@ -255,28 +252,28 @@ li{
         margin: 5px;
     }
  
-     .container_images {
+    .container_images {
         margin-top: -16px;
         display: inline-flex;
         width: auto;
         height: 180px;
-     }
+    }
 
-     .span_text {
+    .span_text {
         font-size: 16px;
-     }
+    }
 
-     .text_twitter {
+    .text_twitter {
         font-size: 17px;
-     }
+    }
 
-     #modal_img {
+    #modal_img {
         width: 95vw;
-     }
+    }
 
-     .text_edition {
+    .text_edition {
         bottom: 13px;
         left: 13px;
-     }
+    }
 }
  

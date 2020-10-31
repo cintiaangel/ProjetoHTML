@@ -1,4 +1,3 @@
-
 function validate(e) {
     e.preventDefault()
     var input = e.target[0];
@@ -6,6 +5,8 @@ function validate(e) {
     var regex = /[^#]+/g;
     console.log(input)
     console.log(regex.test(input));
+
+    //mensagens de erro para o usuario, em casos que não é o esperado
 
     if(input.value == ''){
         campo.innerHTML = 'Ops, campo vazio! Digite o assunto de interrese no campo de busca.'

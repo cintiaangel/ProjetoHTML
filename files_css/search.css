@@ -78,9 +78,10 @@ input:focus {
 }
 
 .msg_error {
-    color: red;
+    color: #bd1c1c;
     position: absolute;
-
+    font-size: 18px;
+    text-shadow: #e0dada 0.1em 0.1em 0.2em;
 }
 
 /* media query será aplicado quando a

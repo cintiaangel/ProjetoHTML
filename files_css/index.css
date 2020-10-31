@@ -3,6 +3,10 @@ body {
 }
 
 /* iframes*/
+#iframe_2:hover > iframe {
+    z-index: 0;
+}
+
 
 .iframe_new_header {
     border: 0;

@@ -1,4 +1,5 @@
-    var imagens = [
+   // lista de imagens
+   var imagens = [
         "https://static.poder360.com.br/2020/04/GATO-CORONAVIRUS.jpg",
         "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg",
         "https://pfarma.com.br/images/noticias/gato-coronavirus.jpg",
@@ -10,6 +11,8 @@
         "https://catracalivre.com.br/wp-content/uploads/2019/07/gato-beber-agua.jpg",
         "https://www.rbsdirect.com.br/imagesrc/25265801.jpg?w=700",
     ]
+
+    // lista com os usernemes esperado pelo twitter
     var username = [
         "@twitterusername1",
         "@twitterusername2",
@@ -24,6 +27,8 @@
     ]
     var page =0;
 
+    // função para usar os botões e carregar as imagens da lista
+    
     function uploadImages(pageParam) {
                 
         if (pageParam === 1) {
@@ -65,6 +70,8 @@
         carregarModal() 
     }
 
+    // função para executar a modal e os textos que irão sobre a imagem
+
     function carregarModal(){
  
         let imagens_modal = document.querySelectorAll('.photo');
@@ -83,7 +90,6 @@
         }
         btClose.addEventListener('click', function(e){
         modal.classList.remove('modal_active');
-     // textUser.classList.add('text_active')
         });
 
     }

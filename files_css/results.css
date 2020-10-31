@@ -3,6 +3,7 @@
 .dad_results {
     display: flex;
     flex-wrap: wrap;
+    max-width: 100vw;
 }
 /* css dos cards */
 
@@ -107,7 +108,7 @@ a {
         height: 124px;
         margin-bottom: 22px;
         border-radius: 4px;
-        width: 300px;
+        width: 333px;
     }
 
     .image_peoples {
